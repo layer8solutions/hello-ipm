@@ -20,4 +20,5 @@ jobs:
         shell: bash
         run: |
           cd $GITHUB_WORKSPACE
+          ls -lah
           ipm status --non-interactive --client-secrets ${{ secrets.IPM_SECRET }}
