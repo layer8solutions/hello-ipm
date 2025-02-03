@@ -10,6 +10,9 @@ jobs:
   setup-ipm:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+  
       - name: Install IPM CLI
         shell: bash
         run: |
