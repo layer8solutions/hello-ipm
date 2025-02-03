@@ -19,4 +19,5 @@ jobs:
       - name: Run IPM CLI
         shell: bash
         run: |
+          cd $GITHUB_WORKSPACE
           ipm status --non-interactive --client-secrets ${{ secrets.IPM_SECRET }}
