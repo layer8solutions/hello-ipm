@@ -1,7 +1,10 @@
 name: Setup IPM CLI
 
 on:
-  workflow_call: # This allows the workflow to be called by other workflows
+    push:
+        branches:
+            - main
+    workflow_dispatch: # This allows the workflow to be triggered manually
 
 jobs:
   setup-ipm:
