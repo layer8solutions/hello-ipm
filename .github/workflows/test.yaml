@@ -16,7 +16,6 @@ jobs:
           curl -Lo ipm-cli.tar.gz "https://layer8storagetests.blob.core.windows.net/cli-dl/0.7.0/ipm-cli-0.7.0-linux-x64-full.tar.gz?sv=2023-01-03&st=2025-01-31T15%3A01%3A13Z&se=2025-03-07T15%3A01%3A00Z&sr=b&sp=r&sig=JwbhiZ1L0vGNq7AxKlfyFAC3HREceC35lS2JrNiOVoA%3D"
           tar -xzf ipm-cli.tar.gz 
           sudo mv ./ipm /usr/local/bin/ipm
-          ipm version
       - name: Run IPM CLI
         shell: bash
         run: |
